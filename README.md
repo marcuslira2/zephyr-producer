@@ -103,34 +103,17 @@ Outros parâmetros podem ser ajustados conforme necessidade.
 
 ## 📡 Endpoints Disponíveis
 
-### 1️⃣ Enviar Arquivo CSV para Processamento
+### Enviar Arquivo CSV para Processamento
 ```http
-POST /api/producer/upload
-```
-**Corpo da requisição:** `multipart/form-data`
-
-**Resposta esperada:**
-```json
-{
-  "message": "Arquivo processado com sucesso.",
-  "totalRecords": 1000
-}
-```
-
-### 2️⃣ Enviar Dados JSON Manualmente
-```http
-POST /api/producer/send
+POST /api/csv/send
 ```
 **Corpo da requisição:**
 ```json
 {
-  "id": 1,
-  "nome": "Produto X",
-  "preco": 99.99
+    "path":"Path",
+    "type":"CONSUMER"
 }
 ```
-
----
 
 ## 📜 Licença
 
